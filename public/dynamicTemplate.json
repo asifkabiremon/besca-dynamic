@@ -1,0 +1,118 @@
+[
+    {
+        "templateName": "user",
+        "searchComponent": [
+            {
+                "type": "text",
+                "name": "name",
+                "size": 3
+            },
+            {
+                "type": "number",
+                "name": "age",
+                "size": 3
+            },
+            {
+                "type": "date",
+                "name": "DOB",
+                "size": 3
+            },
+            {
+                "type": "dropdown",
+                "name": "country",
+                "values": [
+                    "Malaysia",
+                    "Singapore",
+                    "India",
+                    "Others"
+                ],
+                "url": "http://localhost:8080/api/country",
+                "size": 3
+            },
+            {
+                "type": "dropdown",
+                "name": "city",
+                "values": [
+                    "Selangor",
+                    "Kuala Lumpur",
+                    "Johor",
+                    "Others"
+                ],
+                "url": "http://localhost:8080/api/city?country=Malaysia",
+                "size": 3
+            },
+            {
+                "type": "radio",
+                "name": "gender",
+                "values": [
+                    "Male",
+                    "Female",
+                    "Trans"
+                ],
+                "size": 3
+            }
+        ],
+        "tableComponent": [
+            {
+                "traineeId": "string",
+                "email": "string",
+                "name": "string",
+                "contactNumber": "string",
+                "race": "string"
+            }
+        ]
+    },
+    {
+        "templateName": "trainee",
+        "searchComponent": [
+            {
+                "type": "text",
+                "name": "traineeId",
+                "size": 3
+            },
+            {
+                "type": "email",
+                "name": "email",
+                "size": 3
+            },
+            {
+                "type": "text",
+                "name": "name",
+                "size": 3
+            },
+            {
+                "type": "date",
+                "name": "dateOfBirth",
+                "size": 3
+            },
+            {
+                "type": "text",
+                "name": "contactNumber",
+                "size": 3
+            },
+            {
+                "type": "dropdown",
+                "name": "race",
+                "values": [
+                    "Malay",
+                    "Eurasian",
+                    "Chinese",
+                    "Indian",
+                    "Others"
+                ],
+                "url": "",
+                "size": 3
+            }
+        ],
+        "tableComponent": [
+            {
+                "traineeId": "string",
+                "email": "string",
+                "name": "string",
+                "dateOfBirth": "string",
+                "contactNumber": "string",
+                "race": "string"
+            }
+        ]
+    }
+]
