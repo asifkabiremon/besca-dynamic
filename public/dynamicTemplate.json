@@ -14,7 +14,7 @@
             },
             {
                 "type": "date",
-                "name": "DOB",
+                "name": "dateOfBirth",
                 "size": 3
             },
             {
@@ -24,21 +24,8 @@
                     "Malaysia",
                     "Singapore",
                     "India",
-                    "Others"
+                    "Bangladesh"
                 ],
-                "url": "http://localhost:8080/api/country",
-                "size": 3
-            },
-            {
-                "type": "dropdown",
-                "name": "city",
-                "values": [
-                    "Selangor",
-                    "Kuala Lumpur",
-                    "Johor",
-                    "Others"
-                ],
-                "url": "http://localhost:8080/api/city?country=Malaysia",
                 "size": 3
             },
             {
@@ -47,18 +34,18 @@
                 "values": [
                     "Male",
                     "Female",
-                    "Trans"
+                    "Non-binary"
                 ],
                 "size": 3
             }
         ],
         "tableComponent": [
             {
-                "traineeId": "string",
-                "email": "string",
                 "name": "string",
-                "contactNumber": "string",
-                "race": "string"
+                "age": "number",
+                "dateOfBirth": "date",
+                "country": "string",
+                "gender": "string"
             }
         ]
     },
