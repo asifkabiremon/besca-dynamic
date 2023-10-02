@@ -2,16 +2,18 @@ const express = require('express');
 const cors = require("cors");
 const dotenv = require("dotenv").config();
 
+const templateRoute = require('./src/routes/template.route.jsx');
+const getDataRoute = require('./src/routes/getData.route.jsx');
+const { connectDB } = require('./src/database/Mongo.database.js');
+
 const app = express();
 const port = process.env.PORT || 4000;
 
 app.use(cors());
 app.use(express.json());
 
-const templateRoute = require('./src/routes/template.route.jsx');
-const getDataRoute = require('./src/routes/getData.route.jsx');
 
-
+connectDB();
 
 app.get('/', (req, res) => {
   res.send('Hello World!');
