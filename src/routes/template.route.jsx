@@ -1,7 +1,7 @@
 const express = require('express');
 const fs = require('fs').promises;
 const path = require('path');
-const templateCollection = require('../database/Template');
+const templateCollection = require('../database/Template.js');
 
 const router = express.Router();
 
