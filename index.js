@@ -1,6 +1,6 @@
 const express = require('express');
 const cors = require("cors");
-const dotenv = require("dotenv").config();
+require("dotenv").config();
 
 const templateRoute = require('./src/routes/template.route.jsx');
 const getDataRoute = require('./src/routes/getData.route.jsx');
