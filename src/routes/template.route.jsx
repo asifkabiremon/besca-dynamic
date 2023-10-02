@@ -34,7 +34,6 @@ router.get('/db/', async(req, res) => {
     const templateName = req.query?.templateName || '';
 
     const query = { templateName: templateName };
-    console.log(query);
 
     try {
         const getTemplate = await templateCollection.findOne( query );
