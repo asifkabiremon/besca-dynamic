@@ -13,6 +13,10 @@ const templateSchema = new mongoose.Schema({
     type: Array,
     required: true,
   },
+  tableStyle: {
+    type: Array,
+    required: true,
+  }
 });
 
 const templateCollection = mongoose.model("templates", templateSchema);

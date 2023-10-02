@@ -47,7 +47,39 @@
                 "country": "string",
                 "gender": "string"
             }
-        ]
+        ],
+        "tableStyle": {
+            "tableCol": [
+                {
+                    "key": "name",
+                    "title": "Name",
+                    "size": "100px"
+                },
+                {
+                    "key": "age",
+                    "title": "Age",
+                    "size": "80px"
+                },
+                {
+                    "key": "dateOfBirth",
+                    "title": "DOB",
+                    "size": "20px"
+                },
+                {
+                    "key": "country",
+                    "title": "Country",
+                    "size": "30px"
+                },
+                {
+                    "key": "gender",
+                    "title": "Gender",
+                    "size": "auto"
+                }
+            ],
+            "mode": "responsive",
+            "scrollRight": "enabled",
+            "maxRow": 20
+        }
     },
     {
         "templateName": "trainee",
@@ -100,6 +132,43 @@
                 "contactNumber": "string",
                 "race": "string"
             }
-        ]
+        ],
+        "tableStyle": {
+            "tableCol": [
+                {
+                    "key": "traineeId",
+                    "title": "Trainee ID",
+                    "size": "150px"
+                },
+                {
+                    "key": "email",
+                    "title": "Email",
+                    "size": "200px"
+                },
+                {
+                    "key": "name",
+                    "title": "Name",
+                    "size": "300px"
+                },
+                {
+                    "key": "dateOfBirth",
+                    "title": "DOB",
+                    "size": "100px"
+                },
+                {
+                    "key": "contactNumber",
+                    "title": "Contact Number",
+                    "size": "50px"
+                },
+                {
+                    "key": "race",
+                    "title": "Race",
+                    "size": "30px"
+                }
+            ],
+            "mode": "responsive",
+            "scrollRight": "enabled",
+            "maxRow": 20
+        }
     }
 ]
