@@ -1,79 +1,95 @@
 [
     {
         "templateName": "user",
-        "searchComponent": [
-            {
-                "type": "text",
-                "name": "name",
-                "size": 3
-            },
-            {
-                "type": "number",
-                "name": "age",
-                "size": 3
-            },
-            {
-                "type": "date",
-                "name": "dateOfBirth",
-                "size": 3
-            },
-            {
-                "type": "dropdown",
-                "name": "country",
-                "values": [
-                    "Malaysia",
-                    "Singapore",
-                    "India",
-                    "Bangladesh"
-                ],
-                "size": 3
-            },
-            {
-                "type": "radio",
-                "name": "gender",
-                "values": [
-                    "Male",
-                    "Female",
-                    "Non-binary"
-                ],
-                "size": 3
-            }
-        ],
-        "tableComponent": [
-            {
-                "name": "string",
-                "age": "number",
-                "dateOfBirth": "date",
-                "country": "string",
-                "gender": "string"
-            }
-        ],
+        "searchComponent": {
+            "condition": "or",
+            "fields": [
+                {
+                    "key": "name",
+                    "dataType": "string",
+                    "type": "text",
+                    "title": "Name",
+                    "operator": "match",
+                    "width": "100%",
+                    "size": 4
+                },
+                {
+                    "key": "age",
+                    "dataType": "number",
+                    "type": "number",
+                    "title": "Age",
+                    "operator": "greaterThan",
+                    "width": "100%",
+                    "size": 4
+                },
+                {
+                    "key": "dateOfBirth",
+                    "dataType": "date",
+                    "type": "date",
+                    "title": "DOB",
+                    "operator": "equal",
+                    "width": "150px",
+                    "size": 4
+                },
+                {
+                    "key": "country",
+                    "dataType": "string",
+                    "type": "dropdown",
+                    "title": "Country",
+                    "values": [
+                        "Malaysia",
+                        "Singapore",
+                        "India",
+                        "Bangladesh"
+                    ],
+                    "operator": "equal",
+                    "width": "100%",
+                    "size": 4
+                },
+                {
+                    "key": "gender",
+                    "dataType": "string",
+                    "type": "radio",
+                    "title": "Gender",
+                    "values": [
+                        "Male",
+                        "Female",
+                        "Agender",
+                        "Genderfluid"
+                    ],
+                    "operator": "equal",
+                    "width": "100%",
+                    "size": 6
+                }
+            ]
+        },
         "tableStyle": {
             "tableCol": [
                 {
                     "key": "name",
                     "title": "Name",
-                    "size": "100px"
+                    "type": "string",
+                    "size": "auto"
                 },
                 {
                     "key": "age",
                     "title": "Age",
-                    "size": "80px"
+                    "size": "150px"
                 },
                 {
                     "key": "dateOfBirth",
                     "title": "DOB",
-                    "size": "20px"
+                    "size": "100px"
                 },
                 {
                     "key": "country",
                     "title": "Country",
-                    "size": "30px"
+                    "size": "150px"
                 },
                 {
                     "key": "gender",
                     "title": "Gender",
-                    "size": "auto"
+                    "size": "180px"
                 }
             ],
             "mode": "responsive",
@@ -83,56 +99,73 @@
     },
     {
         "templateName": "trainee",
-        "searchComponent": [
-            {
-                "type": "text",
-                "name": "traineeId",
-                "size": 3
-            },
-            {
-                "type": "email",
-                "name": "email",
-                "size": 3
-            },
-            {
-                "type": "text",
-                "name": "name",
-                "size": 3
-            },
-            {
-                "type": "date",
-                "name": "dateOfBirth",
-                "size": 3
-            },
-            {
-                "type": "text",
-                "name": "contactNumber",
-                "size": 3
-            },
-            {
-                "type": "dropdown",
-                "name": "race",
-                "values": [
-                    "Malay",
-                    "Eurasian",
-                    "Chinese",
-                    "Indian",
-                    "Others"
-                ],
-                "url": "",
-                "size": 3
-            }
-        ],
-        "tableComponent": [
-            {
-                "traineeId": "string",
-                "email": "string",
-                "name": "string",
-                "dateOfBirth": "string",
-                "contactNumber": "string",
-                "race": "string"
-            }
-        ],
+        "searchComponent": {
+            "condition": "or",
+            "fields": [
+                {
+                    "key": "traineeId",
+                    "dataType": "string",
+                    "type": "text",
+                    "title": "Trainee ID",
+                    "operator": "match",
+                    "width": "100%",
+                    "size": 4
+                },
+                {
+                    "key": "email",
+                    "dataType": "string",
+                    "type": "email",
+                    "title": "Email",
+                    "operator": "match",
+                    "width": "100%",
+                    "size": 4
+                },
+                {
+                    "key": "name",
+                    "dataType": "string",
+                    "type": "text",
+                    "title": "Name",
+                    "operator": "match",
+                    "width": "100%",
+                    "size": 4
+                },
+                {
+                    "key": "dateOfBirth",
+                    "dataType": "date",
+                    "type": "date",
+                    "title": "DOB",
+                    "operator": "equal",
+                    "width": "150px",
+                    "size": 4
+                },
+                {
+                    "key": "contactNumber",
+                    "dataType": "string",
+                    "type": "text",
+                    "title": "Contact Number",
+                    "operator": "match",
+                    "width": "100%",
+                    "size": 4
+                },
+                {
+                    "key": "race",
+                    "dataType": "string",
+                    "type": "dropdown",
+                    "values": [
+                        "Malay",
+                        "Eurasian",
+                        "Chinese",
+                        "Indian",
+                        "Others"
+                    ],
+                    "title": "Race",
+                    "operator": "equal",
+                    "url": "",
+                    "width": "150px",
+                    "size": 4
+                }
+            ]
+        },
         "tableStyle": {
             "tableCol": [
                 {
