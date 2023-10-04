@@ -68,8 +68,72 @@
                 }
             ]
         },
-
-        "tableStyle": {
+        "formComponent": {
+            "fields": [
+                {
+                    "key": "name",
+                    "dataType": "string",
+                    "type": "text",
+                    "label": "Name",
+                    "placeholder": "Enter name",
+                    "required": true,
+                    "width": "100%",
+                    "size": 4
+                },
+                {
+                    "key": "age",
+                    "dataType": "number",
+                    "type": "number",
+                    "label": "Age",
+                    "placeholder": "Enter age",
+                    "required": true,
+                    "width": "100%",
+                    "size": 4
+                },
+                {
+                    "key": "dateOfBirth",
+                    "dataType": "date",
+                    "type": "date",
+                    "label": "DOB",
+                    "placeholder": "Enter DOB",
+                    "required": true,
+                    "width": "150px",
+                    "size": 4
+                },
+                {
+                    "key": "country",
+                    "dataType": "string",
+                    "type": "dropdown",
+                    "label": "Country",
+                    "placeholder": "Select country",
+                    "values": [
+                        "Malaysia",
+                        "Singapore",
+                        "India",
+                        "Bangladesh"
+                    ],
+                    "lutApi": "",
+                    "operator": "equal",
+                    "required": true,
+                    "size": 4
+                },
+                {
+                    "key": "gender",
+                    "dataType": "string",
+                    "type": "radio",
+                    "label": "Gender",
+                    "placeholder":"Enter gender",
+                    "values": [
+                        "Male",
+                        "Female"
+                    ],
+                    "required": true,
+                    "width": "100%",
+                    "size": 6
+                }
+            ]
+        },
+        "tableComponent": {
             "tableCol": [
                 {
                     "key": "name",
@@ -180,7 +244,79 @@
                 }
             ]
         },
-        "tableStyle": {
+        "formComponent": {
+            "fields": [
+                {
+                    "key": "traineeId",
+                    "dataType": "string",
+                    "type": "text",
+                    "label": "Trainee ID",
+                    "placeholder": "Enter trainee ID",
+                    "required": true,
+                    "width": "100%",
+                    "size": 4
+                },
+                {
+                    "key": "email",
+                    "dataType": "string",
+                    "type": "email",
+                    "label": "Email",
+                    "placeholder": "Enter email",
+                    "required": true,
+                    "width": "100%",
+                    "size": 4
+                },
+                {
+                    "key": "name",
+                    "dataType": "string",
+                    "type": "text",
+                    "label": "Name",
+                    "placeholder": "Enter name",
+                    "required": true,
+                    "width": "100%",
+                    "size": 4
+                },
+                {
+                    "key": "dateOfBirth",
+                    "dataType": "date",
+                    "type": "date",
+                    "label": "DOB",
+                    "placeholder": "Enter DOB",
+                    "required": true,
+                    "width": "150px",
+                    "size": 4
+                },
+                {
+                    "key": "contactNumber",
+                    "dataType": "string",
+                    "type": "text",
+                    "label": "Contact Number",
+                    "placeholder": "Enter contact number",
+                    "required": true,
+                    "width": "100%",
+                    "size": 4
+                },
+                {
+                    "key": "race",
+                    "dataType": "string",
+                    "type": "dropdown",
+                    "values": [
+                        "Malay",
+                        "Eurasian",
+                        "Chinese",
+                        "Indian",
+                        "Others"
+                    ],
+                    "label": "Race",
+                    "placeholder": "Enter race",
+                    "required": true,
+                    "url": "",
+                    "width": "150px",
+                    "size": 4
+                }
+            ]
+        },
+        "tableComponent": {
             "tableCol": [
                 {
                     "key": "traineeId",
