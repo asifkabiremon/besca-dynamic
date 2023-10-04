@@ -9,25 +9,18 @@
                     "key": "name",
                     "dataType": "string",
                     "type": "text",
-                    "title": "Name",
+                    "label": "Name",
+                    "placeholder": "Enter name",
                     "operator": "match",
                     "width": "100%",
-                    "size": 4
-                },
-                {
-                    "key": "test",
-                    "dataType": "string",
-                    "type": "text",
-                    "title": "test",
-                    "operator": "match",
-                    "width": "105px",
                     "size": 4
                 },
                 {
                     "key": "age",
                     "dataType": "number",
                     "type": "number",
-                    "title": "Age",
+                    "label": "Age",
+                    "placeholder": "Enter age",
                     "operator": "greaterThan",
                     "width": "100%",
                     "size": 4
@@ -36,7 +29,8 @@
                     "key": "dateOfBirth",
                     "dataType": "date",
                     "type": "date",
-                    "title": "DOB",
+                    "label": "DOB",
+                    "placeholder": "Enter DOB",
                     "operator": "equal",
                     "width": "150px",
                     "size": 4
@@ -45,13 +39,15 @@
                     "key": "country",
                     "dataType": "string",
                     "type": "dropdown",
-                    "title": "Country",
+                    "label": "Country",
+                    "placeholder": "Select country",
                     "values": [
                         "Malaysia",
                         "Singapore",
                         "India",
                         "Bangladesh"
                     ],
+                    "lutApi": "",
                     "operator": "equal",
                     "width": "100%",
                     "size": 4
@@ -60,12 +56,11 @@
                     "key": "gender",
                     "dataType": "string",
                     "type": "radio",
-                    "title": "Gender",
+                    "label": "Gender",
+                    "placeholder":"Enter gender",
                     "values": [
                         "Male",
-                        "Female",
-                        "Agender",
-                        "Genderfluid"
+                        "Female"
                     ],
                     "operator": "equal",
                     "width": "100%",
@@ -73,6 +68,7 @@
                 }
             ]
         },
+
         "tableStyle": {
             "tableCol": [
                 {
@@ -118,7 +114,8 @@
                     "key": "traineeId",
                     "dataType": "string",
                     "type": "text",
-                    "title": "Trainee ID",
+                    "label": "Trainee ID",
+                    "placeholder": "Enter trainee ID",
                     "operator": "match",
                     "width": "100%",
                     "size": 4
@@ -127,7 +124,8 @@
                     "key": "email",
                     "dataType": "string",
                     "type": "email",
-                    "title": "Email",
+                    "label": "Email",
+                    "placeholder": "Enter email",
                     "operator": "match",
                     "width": "100%",
                     "size": 4
@@ -136,7 +134,8 @@
                     "key": "name",
                     "dataType": "string",
                     "type": "text",
-                    "title": "Name",
+                    "label": "Name",
+                    "placeholder": "Enter name",
                     "operator": "match",
                     "width": "100%",
                     "size": 4
@@ -145,7 +144,8 @@
                     "key": "dateOfBirth",
                     "dataType": "date",
                     "type": "date",
-                    "title": "DOB",
+                    "label": "DOB",
+                    "placeholder": "Enter DOB",
                     "operator": "equal",
                     "width": "150px",
                     "size": 4
@@ -154,7 +154,8 @@
                     "key": "contactNumber",
                     "dataType": "string",
                     "type": "text",
-                    "title": "Contact Number",
+                    "label": "Contact Number",
+                    "placeholder": "Enter contact number",
                     "operator": "match",
                     "width": "100%",
                     "size": 4
@@ -170,7 +171,8 @@
                         "Indian",
                         "Others"
                     ],
-                    "title": "Race",
+                    "label": "Race",
+                    "placeholder": "Enter race",
                     "operator": "equal",
                     "url": "",
                     "width": "150px",
