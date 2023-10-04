@@ -236,7 +236,7 @@
                         "Others"
                     ],
                     "label": "Race",
-                    "placeholder": "Enter race",
+                    "placeholder": "Select race",
                     "operator": "equal",
                     "url": "",
                     "width": "150px",
@@ -308,7 +308,7 @@
                         "Others"
                     ],
                     "label": "Race",
-                    "placeholder": "Enter race",
+                    "placeholder": "Select race",
                     "required": true,
                     "url": "",
                     "width": "150px",
