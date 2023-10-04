@@ -1,6 +1,7 @@
 [
     {
         "templateName": "user",
+        "tableName": "user",
         "searchComponent": {
             "condition": "or",
             "fields": [
@@ -11,6 +12,15 @@
                     "title": "Name",
                     "operator": "match",
                     "width": "100%",
+                    "size": 4
+                },
+                {
+                    "key": "test",
+                    "dataType": "string",
+                    "type": "text",
+                    "title": "test",
+                    "operator": "match",
+                    "width": "105px",
                     "size": 4
                 },
                 {
@@ -100,6 +110,7 @@
     },
     {
         "templateName": "trainee",
+        "tableName": "trainee",
         "searchComponent": {
             "condition": "or",
             "fields": [
