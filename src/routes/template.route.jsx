@@ -1,7 +1,7 @@
 const express = require('express');
 const fs = require('fs').promises;
 const path = require('path');
-const templateCollection = require('../database/Template.js');
+// const templateCollection = require('../database/Template.js');
 
 const router = express.Router();
 
@@ -30,24 +30,24 @@ router.get('/', async(req, res) => {
 });
 
 // This is the route for the template page from the database
-router.get('/db/', async(req, res) => {
-    const templateName = req.query?.templateName || '';
+// router.get('/db/', async(req, res) => {
+//     const templateName = req.query?.templateName || '';
 
-    const query = { templateName: templateName };
+//     const query = { templateName: templateName };
 
-    try {
-        const getTemplate = await templateCollection.findOne( query );
-        if (getTemplate) {
-            return res.send(getTemplate);
-        } else {
-            return res.status(404).send({ message: 'Template not found' });
-        }
-    }
-    catch (error) {
-        console.log(error);
-        res.send(error);
-    }
-});
+//     try {
+//         const getTemplate = await templateCollection.findOne( query );
+//         if (getTemplate) {
+//             return res.send(getTemplate);
+//         } else {
+//             return res.status(404).send({ message: 'Template not found' });
+//         }
+//     }
+//     catch (error) {
+//         console.log(error);
+//         res.send(error);
+//     }
+// });
 
 
 module.exports = router;

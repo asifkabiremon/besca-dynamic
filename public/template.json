@@ -1,5 +1,5 @@
 {
-    "templateName": "user1",
+    "templateName": "user",
     "searchComponent": {
         "condition": "or",
         "fields": [
@@ -9,7 +9,8 @@
                 "type": "text",
                 "title": "Name",
                 "operator": "match",
-                "size": "4col"
+                "width": "100%",
+                "size": 4
             },
             {
                 "key": "age",
@@ -17,7 +18,8 @@
                 "type": "number",
                 "title": "Age",
                 "operator": "greaterThan",
-                "size": "4col"
+                "width": "100%",
+                "size": 4
             },
             {
                 "key": "dateOfBirth",
@@ -25,7 +27,8 @@
                 "type": "date",
                 "title": "DOB",
                 "operator": "equal",
-                "size": "4col"
+                "width": "150px",
+                "size": 4
             },
             {
                 "key": "country",
@@ -39,7 +42,8 @@
                     "Bangladesh"
                 ],
                 "operator": "equal",
-                "size": "4col"
+                "width": "100%",
+                "size": 4
             },
             {
                 "key": "gender",
@@ -49,10 +53,12 @@
                 "values": [
                     "Male",
                     "Female",
-                    "Non-binary"
+                    "Agender",
+                    "Genderfluid"
                 ],
                 "operator": "equal",
-                "size": "4col"
+                "width": "100%",
+                "size": 6
             }
         ]
     },
@@ -61,27 +67,28 @@
             {
                 "key": "name",
                 "title": "Name",
+                "type": "string",
                 "size": "auto"
             },
             {
                 "key": "age",
                 "title": "Age",
-                "size": "10px"
+                "size": "100px"
             },
             {
                 "key": "dateOfBirth",
                 "title": "DOB",
-                "size": "15px"
+                "size": "100px"
             },
             {
                 "key": "country",
                 "title": "Country",
-                "size": "30px"
+                "size": "150px"
             },
             {
                 "key": "gender",
                 "title": "Gender",
-                "size": "20px"
+                "size": "180px"
             }
         ],
         "mode": "responsive",

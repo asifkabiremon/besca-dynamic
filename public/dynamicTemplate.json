@@ -94,6 +94,7 @@
             ],
             "mode": "responsive",
             "scrollRight": "enabled",
+            "displayOrder": "row",
             "maxRow": 20
         }
     },
@@ -201,6 +202,7 @@
             ],
             "mode": "responsive",
             "scrollRight": "enabled",
+            "displayOrder": "row",
             "maxRow": 20
         }
     }
