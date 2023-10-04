@@ -4,6 +4,7 @@ require("dotenv").config();
 
 const templateRoute = require('./src/routes/template.route.jsx');
 const getDataRoute = require('./src/routes/getData.route.jsx');
+const getCountryRoute = require('./src/routes/getCountry.route.jsx');
 // const { connectDB } = require('./src/database/Mongo.database.js');
 
 const app = express();
@@ -15,14 +16,14 @@ app.use(express.json());
 
 // connectDB();
 
+app.use('/api/template', templateRoute);
+app.use('/api/getTableData', getDataRoute);
+app.use('/api/country_city', getCountryRoute);
+
+
 app.get('/', (req, res) => {
   res.send('Hello World!'); 
 });
-
-
-app.use('/api/template', templateRoute);
-app.use('/api/getTableData', getDataRoute);
-
 
 app.use("*", (req, res) => {
   res.send("No route found");
