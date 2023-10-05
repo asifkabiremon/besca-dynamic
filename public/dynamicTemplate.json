@@ -41,12 +41,6 @@
                     "type": "dropdown",
                     "label": "Country",
                     "placeholder": "Select country",
-                    "values": [
-                        "Malaysia",
-                        "Singapore",
-                        "India",
-                        "Bangladesh"
-                    ],
                     "lutApi": "/api/country_city/country",
                     "operator": "equal",
                     "width": "100%",
@@ -106,13 +100,7 @@
                     "type": "dropdown",
                     "label": "Country",
                     "placeholder": "Select country",
-                    "values": [
-                        "Malaysia",
-                        "Singapore",
-                        "India",
-                        "Bangladesh"
-                    ],
-                    "lutApi": "http://localhost:4000/api/country_city/country",
+                    "lutApi": "/api/country_city/country",
                     "operator": "equal",
                     "required": true,
                     "size": 4
