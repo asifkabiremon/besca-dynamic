@@ -27,6 +27,16 @@ router.get("/country", async (req, res) => {
 });
 
 // This is the route for getting all the cities of a country
+router.get("/city", async (req, res) => {
+  try {
+    return res.status(404).send("");
+  } catch (error) {
+    console.log(error);
+    res.status(500).send(error);
+  }
+});
+
+// This is the route for getting all the cities of a country
 router.get("/city/:country", async (req, res) => {
   try {
     const country = req.params.country;

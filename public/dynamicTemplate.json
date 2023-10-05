@@ -47,6 +47,17 @@
                     "size": 4
                 },
                 {
+                    "key": "city",
+                    "dataType": "string",
+                    "type": "dropdown",
+                    "label": "City",
+                    "placeholder": "Select city",
+                    "lutApi": "/api/country_city/city",
+                    "operator": "equal",
+                    "width": "100%",
+                    "size": 4
+                },
+                {
                     "key": "gender",
                     "dataType": "string",
                     "type": "radio",
@@ -103,6 +114,17 @@
                     "lutApi": "/api/country_city/country",
                     "operator": "equal",
                     "required": true,
+                    "size": 4
+                },
+                {
+                    "key": "city",
+                    "dataType": "string",
+                    "type": "dropdown",
+                    "label": "City",
+                    "placeholder": "Select city",
+                    "lutApi": "/api/country_city/city",
+                    "operator": "equal",
+                    "width": "100%",
                     "size": 4
                 },
                 {
