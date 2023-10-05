@@ -48,6 +48,7 @@
                 },
                 {
                     "key": "city",
+                    "dependOn": "country",
                     "dataType": "string",
                     "type": "dropdown",
                     "label": "City",
@@ -118,6 +119,7 @@
                 },
                 {
                     "key": "city",
+                    "dependOn": "country",
                     "dataType": "string",
                     "type": "dropdown",
                     "label": "City",
