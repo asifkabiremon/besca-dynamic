@@ -182,6 +182,11 @@
             "scrollRight": "enabled",
             "displayOrder": "row",
             "maxRow": 20
+        },
+        "viewDetailComponent": {
+            "fields": {
+                
+            }
         }
     },
     {
