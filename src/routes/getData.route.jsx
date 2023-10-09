@@ -52,7 +52,7 @@ router.post("/", async (req, res) => {
       // get the data for the filtered columns
       const filteredDataDisplay = filteredData.map((user) => {
         const filteredUser = {};
-        user.id && (filteredUser.id = user.id);
+        user.id && (filteredUser._id = user._id);
         tableCol.forEach((column) => {
           filteredUser[column] = user[column];
         });
